@@ -1,0 +1,45 @@
+@import "scss/_setting.scss";
+.navbar{
+  background-color: $app-bg-color;
+  flex: 30%;
+  border-right: 15px solid white;
+  .title-name{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1{
+      font-size: calc(#{$app-font-size-title * 1.5});
+      font-weight: 1000;
+      color: white;
+      font-family: "Rubik",sans-serif;
+      font-weight: 100px;
+      white-space: 25px;
+      &:hover{
+        color: $tick;
+        transition: 1s;
+      }
+    }
+  }
+  .menu{
+    display: grid;
+    height: 40%;
+    a{
+      text-decoration: none;
+      color: white;
+      width: 85%;
+      margin: auto auto auto 25%;
+      i{
+        color: $links;
+        width: 15%;
+      }
+      &:hover{
+        transform: scale(1.1);
+        margin: auto auto auto 30%;
+      }
+    }
+    .show{
+      color: $links;
+    }
+  }
+}
