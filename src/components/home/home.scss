@@ -1,0 +1,41 @@
+@import 'scss/_setting.scss';
+.home{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  .intro{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    height: 50%;
+    color: white;
+    h2{
+      font-size: calc(#{$app-font-size-title * 1.5});
+    }
+    span{
+      color: $links;
+      font-size: $app-font-size-title;
+    }
+    img{
+      width: 108px;
+      padding: 10px;
+      background-color: #d2691e;
+      border-radius: 50%;
+    }
+    
+    .contact{
+      a:last-child{
+        margin-left: 25px;
+      }
+      i{
+        font-size: 25px;
+        color: white;
+        &:hover{
+          transform: scale(1.5);
+          transition: 0.5s;
+          color: $links;
+        }
+      }
+    }
+  }
+}

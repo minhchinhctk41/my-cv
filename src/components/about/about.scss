@@ -1,0 +1,46 @@
+@import 'scss/_setting.scss';
+
+.about{
+  background-image: linear-gradient(315deg, #ffffff, #d7e1ec);
+  height: 100%;
+  .header{
+    height: 20%;
+    background-color: red;
+  }
+  .content{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    .man{
+      flex: 30%;
+      display: grid;
+      background-color: antiquewhite;
+      height: 100%;
+      place-items: center;
+      span{
+        font-size: $app-font-size-title;
+      }
+      img{
+        width: 50%;
+      }
+    }
+    .about-me{
+      flex: 70%;
+      .content-about{
+        background-color: white;
+        i{
+          color: #333;
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+  }
+  .footer{
+    height: 20%;
+    background-color: #333;
+  }
+}
